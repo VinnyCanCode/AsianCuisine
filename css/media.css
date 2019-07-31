@@ -1,0 +1,145 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body .restuarantLocations .locationCard {
+    height: 30%; }
+    body .restuarantLocations .locationCard h1 {
+      font-size: 1.1rem; }
+    body .restuarantLocations .locationCard .dot {
+      font-size: 1.5rem; }
+  body .restuarantLocations .locationThree {
+    margin: -15rem 0rem 0rem 3rem; } }
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body .topSection .topSectionOverlay header {
+    flex-direction: column; }
+    body .topSection .topSectionOverlay header .logo {
+      height: 13vh; }
+      body .topSection .topSectionOverlay header .logo img {
+        width: 10rem;
+        height: 10rem; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+      height: 35vh;
+      padding: 2rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide h1 {
+        font-size: 1.5rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+        font-size: .8rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+        font-size: .7rem;
+        padding: 8px; }
+  body #chefsSpecials .specialOrder {
+    width: 20%; }
+  body .restuarantLocations .locationCard {
+    height: 30%;
+    width: 30%; }
+    body .restuarantLocations .locationCard h1 {
+      font-size: 1.1rem; }
+    body .restuarantLocations .locationCard .dot {
+      font-size: 1.5rem; }
+  body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+    height: 18%; }
+  body .restuarantLocations .locationThree {
+    margin: -9rem 0rem 0rem 14rem; } }
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 800px) {
+  body .topSection {
+    background: #d0e5d4 url("../imgs/SushibyDaveonDribbble.jpg") 200% 30%/80% no-repeat; }
+    body .topSection .topSectionOverlay header {
+      flex-direction: column; }
+      body .topSection .topSectionOverlay header .logo {
+        height: 15vh; }
+        body .topSection .topSectionOverlay header .logo img {
+          width: 10rem;
+          height: 10rem; }
+      body .topSection .topSectionOverlay header nav ul li .orderNowHeader, body .topSection .topSectionOverlay header nav ul li .leaveFeedback {
+        display: none; }
+  body #aboutUs .aboutUsDetails p {
+    width: 80%; }
+  body #chefsSpecials .chefsSpecialsDescription {
+    width: 70%; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 20vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 20vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+      height: 20vh;
+      padding: .5rem;
+      line-height: .5rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide h1 {
+        font-size: 1.2rem;
+        line-height: 2rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+        display: none; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+        font-size: .7rem;
+        padding: 5px;
+        width: 90%; }
+  body #chefsSpecials .specialOrder {
+    height: 5vh;
+    width: 35%; }
+  body .menus .wordsContainer ul li button {
+    width: 10rem; }
+  body .restuarantLocations .locationCard {
+    height: 35%;
+    width: 60%;
+    margin-left: 3rem; }
+    body .restuarantLocations .locationCard h1 {
+      font-size: 1.1rem; }
+    body .restuarantLocations .locationCard .dot {
+      font-size: 1.5rem; }
+  body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+    height: 15%; }
+  body .restuarantLocations .locationThree {
+    margin-top: 1rem;
+    align-self: flex-start; }
+  body footer {
+    grid-template-columns: 1fr 1fr 1fr; }
+    body footer .logo {
+      display: none; }
+    body footer .footerNav {
+      padding: 1rem; }
+    body footer .footerNav ul li {
+      list-style: none;
+      line-height: 2rem;
+      align-self: start; }
+    body footer .footerNavOne {
+      grid-column: 1 / span 1; }
+    body footer .footerNavTwo {
+      grid-column: 2 / span 1; }
+    body footer .footerNavThree {
+      grid-column: 3 / span 1; }
+      body footer .footerNavThree ul {
+        display: flex;
+        flex-direction: row; }
+        body footer .footerNavThree ul img {
+          width: 1rem;
+          height: 3rem;
+          margin-right: 2rem; } }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
