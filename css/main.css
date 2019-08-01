@@ -1,0 +1,731 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.order {
+  border: 3px solid transparent;
+  border-radius: 2px;
+  padding: 7px;
+  font-size: .8rem;
+  width: 10rem;
+  outline: none; }
+
+body {
+  font-family: 'Anton', 'Lato', sans-serif; }
+  body .topSection {
+    width: 100%;
+    height: 100vh;
+    background: #d0e5d4 url("../imgs/SushibyDaveonDribbble.jpg") 100%/50% no-repeat; }
+    body .topSection .topSectionOverlay {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0);
+      position: absolute; }
+      body .topSection .topSectionOverlay header {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Lato'; }
+        body .topSection .topSectionOverlay header .logo {
+          margin-left: 4rem; }
+          body .topSection .topSectionOverlay header .logo img {
+            width: 14rem;
+            height: 14rem; }
+        body .topSection .topSectionOverlay header nav {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          font-size: .9rem; }
+          body .topSection .topSectionOverlay header nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            body .topSection .topSectionOverlay header nav ul li {
+              list-style: none;
+              margin-right: 3rem; }
+              body .topSection .topSectionOverlay header nav ul li a {
+                text-decoration: none;
+                color: black; }
+              body .topSection .topSectionOverlay header nav ul li .orderNowHeader {
+                background-color: #ff8342;
+                color: white;
+                font-weight: 900; }
+              body .topSection .topSectionOverlay header nav ul li .leaveFeedback {
+                background-color: transparent;
+                color: #ff8342;
+                font-weight: 900;
+                border: 2px solid #ff8342; }
+      body .topSection .topSectionOverlay .landingPage {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center; }
+        body .topSection .topSectionOverlay .landingPage .landingWords {
+          width: 50vh;
+          height: 55vh;
+          margin-left: 10%; }
+          body .topSection .topSectionOverlay .landingPage .landingWords h1 {
+            font-size: 5rem; }
+          body .topSection .topSectionOverlay .landingPage .landingWords p {
+            font-family: 'Lato'; }
+          body .topSection .topSectionOverlay .landingPage .landingWords button {
+            font-size: 1rem;
+            font-weight: 700;
+            height: 6vh;
+            width: 50%;
+            color: white;
+            background-color: #58a800; }
+          body .topSection .topSectionOverlay .landingPage .landingWords img {
+            width: 11rem;
+            height: 14rem; }
+  body #aboutUs {
+    background: #FED766;
+    height: 80vh;
+    font-family: 'Lato'; }
+    body #aboutUs img {
+      width: 7rem;
+      height: 7rem; }
+    body #aboutUs .aboutUsDetails {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      body #aboutUs .aboutUsDetails h1 {
+        font-family: 'Anton';
+        font-size: 2rem;
+        letter-spacing: 1rem; }
+      body #aboutUs .aboutUsDetails p {
+        width: 38%;
+        line-height: 2rem; }
+  body #chefsSpecials {
+    width: 100%;
+    height: 100%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body #chefsSpecials .chefsSpecialsDescription {
+      width: 40%;
+      text-align: center; }
+      body #chefsSpecials .chefsSpecialsDescription h1 {
+        letter-spacing: .5rem; }
+      body #chefsSpecials .chefsSpecialsDescription p {
+        font-family: 'Lato';
+        line-height: 2rem; }
+    body #chefsSpecials .chefsSpecialMeals {
+      width: 100%;
+      justify-content: center; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards {
+        display: grid;
+        grid-auto-columns: repeat(2, 1fr);
+        grid-auto-rows: repeat(6, 1fr);
+        height: 50vh;
+        justify-content: center; }
+        body #chefsSpecials .chefsSpecialMeals .mealCards .halfSide {
+          width: 35vw;
+          font-family: 'Lato'; }
+        body #chefsSpecials .chefsSpecialMeals .mealCards .picSide {
+          grid-column: 1 / span 1; }
+          body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+            width: 100%;
+            height: 50vh; }
+        body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+          grid-column: 2 / span 1;
+          width: 35vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 5rem; }
+          body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+            line-height: 1.5rem; }
+          body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+            border: 2px solid grey;
+            color: grey;
+            font-size: .8rem;
+            font-weight: 700;
+            padding: 11px; }
+      body #chefsSpecials .chefsSpecialMeals .mealTwo .picSide, body #chefsSpecials .chefsSpecialMeals .mealFour .picSide, body #chefsSpecials .chefsSpecialMeals .mealSix .picSide {
+        grid-column: 2; }
+      body #chefsSpecials .chefsSpecialMeals .mealTwo .descriptionSide, body #chefsSpecials .chefsSpecialMeals .mealFour .descriptionSide, body #chefsSpecials .chefsSpecialMeals .mealSix .descriptionSide {
+        grid-column: 1 / span 1; }
+    body #chefsSpecials .specialOrder {
+      font-size: 1rem;
+      font-weight: 700;
+      height: 6vh;
+      width: 12%;
+      color: #ff8342;
+      border-color: #ff8342;
+      background-color: white; }
+  body .menus {
+    background: #f8fafb;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato'; }
+    body .menus .wordsContainer {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 2rem; }
+      body .menus .wordsContainer img {
+        width: 7rem;
+        height: 7rem; }
+      body .menus .wordsContainer h1 {
+        font-family: 'Anton';
+        font-size: 2rem;
+        letter-spacing: .3rem; }
+      body .menus .wordsContainer ul {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        body .menus .wordsContainer ul li {
+          list-style: none;
+          margin-right: 2rem; }
+          body .menus .wordsContainer ul li button {
+            font-size: 1rem;
+            font-weight: 700;
+            width: 15rem;
+            height: 6vh;
+            color: white;
+            background-color: #58a800; }
+          body .menus .wordsContainer ul li .catering {
+            color: #58a800;
+            background-color: white;
+            border-color: #58a800; }
+  body .restuarantLocations {
+    height: 100vh;
+    width: 100%;
+    background: url("../imgs/NYmap.png") 100%/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    body .restuarantLocations .locationTitle {
+      height: 20vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 4rem;
+      font-weight: 900; }
+      body .restuarantLocations .locationTitle h1 {
+        font-size: 2rem;
+        letter-spacing: .5rem; }
+      body .restuarantLocations .locationTitle h2 {
+        font-family: 'Lato'; }
+    body .restuarantLocations .locationCard {
+      height: 40%;
+      width: 25%;
+      margin-left: 8rem;
+      border: 5px solid transparent;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 1px 3px 5px lightgray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .restuarantLocations .locationCard h1 {
+        font-family: 'Anton';
+        letter-spacing: .1rem; }
+      body .restuarantLocations .locationCard p {
+        font-family: 'Lato'; }
+      body .restuarantLocations .locationCard .dot {
+        font-size: 2.5rem; }
+      body .restuarantLocations .locationCard .activeDot {
+        color: orange; }
+      body .restuarantLocations .locationCard .inactiveDot {
+        color: gray; }
+    body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+      height: 18%; }
+    body .restuarantLocations .locationThree {
+      align-self: center;
+      margin: -9rem; }
+  body footer {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr 1fr;
+    background-color: #2d2d3d;
+    color: white;
+    align-content: center;
+    font-family: 'Lato';
+    font-weight: 100; }
+    body footer .logo {
+      grid-column: 30%; }
+      body footer .logo img {
+        width: 12rem;
+        height: 12rem;
+        margin-left: 5rem; }
+    body footer .footerNav ul li {
+      list-style: none;
+      line-height: 2rem;
+      align-self: center; }
+    body footer .footerNavOne {
+      grid-column: 2 / span 1; }
+    body footer .footerNavTwo {
+      grid-column: 3 / span 1; }
+    body footer .footerNavThree {
+      grid-column: 4 / span 1; }
+      body footer .footerNavThree ul {
+        display: flex;
+        flex-direction: row; }
+        body footer .footerNavThree ul img {
+          width: 1rem;
+          height: 3rem;
+          margin-right: 2rem; }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body .restuarantLocations .locationCard {
+    height: 30%; }
+    body .restuarantLocations .locationCard h1 {
+      font-size: 1.1rem; }
+    body .restuarantLocations .locationCard .dot {
+      font-size: 1.5rem; }
+  body .restuarantLocations .locationThree {
+    margin: -15rem 0rem 0rem 3rem; } }
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  body .topSection {
+    height: 70vh; }
+    body .topSection .topSectionOverlay header {
+      height: 8vh;
+      justify-content: flex-end; }
+      body .topSection .topSectionOverlay header .logo img {
+        margin-top: 5rem;
+        width: 10rem;
+        height: 10rem; }
+    body .topSection .topSectionOverlay .landingPage .landingWords {
+      height: 70vh; }
+      body .topSection .topSectionOverlay .landingPage .landingWords p {
+        width: 70%; }
+      body .topSection .topSectionOverlay .landingPage .landingWords img {
+        width: 9rem;
+        height: 12rem; }
+  body #aboutUs {
+    height: 50vh; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 25vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .halfSide {
+      height: 25vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 25vh; }
+  body #chefsSpecials .specialOrder {
+    height: 5vh;
+    width: 25%; }
+  body .menus {
+    height: 55vh; }
+  body .restuarantLocations .locationCard {
+    height: 25%;
+    width: 40%; }
+  body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+    height: 18%; }
+  body .restuarantLocations .locationThree {
+    margin: 1rem 23rem 0rem 0rem; } }
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body .topSection .topSectionOverlay header {
+    flex-direction: column; }
+    body .topSection .topSectionOverlay header .logo {
+      height: 13vh; }
+      body .topSection .topSectionOverlay header .logo img {
+        width: 10rem;
+        height: 10rem; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+      height: 35vh;
+      padding: 2rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide h1 {
+        font-size: 1.5rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+        font-size: .8rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+        font-size: .7rem;
+        padding: 8px; }
+  body #chefsSpecials .specialOrder {
+    width: 20%; }
+  body .restuarantLocations .locationCard {
+    height: 30%;
+    width: 30%; }
+    body .restuarantLocations .locationCard h1 {
+      font-size: 1.1rem; }
+    body .restuarantLocations .locationCard .dot {
+      font-size: 1.5rem; }
+  body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+    height: 18%; }
+  body .restuarantLocations .locationThree {
+    margin: -9rem 0rem 0rem 14rem; } }
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 800px) {
+  body .topSection {
+    background: #d0e5d4 url("../imgs/SushibyDaveonDribbble.jpg") 200% 30%/80% no-repeat; }
+    body .topSection .topSectionOverlay header {
+      flex-direction: column; }
+      body .topSection .topSectionOverlay header .logo {
+        height: 15vh; }
+        body .topSection .topSectionOverlay header .logo img {
+          width: 10rem;
+          height: 10rem; }
+      body .topSection .topSectionOverlay header nav ul li .orderNowHeader, body .topSection .topSectionOverlay header nav ul li .leaveFeedback {
+        display: none; }
+  body #aboutUs .aboutUsDetails p {
+    width: 80%; }
+  body #chefsSpecials .chefsSpecialsDescription {
+    width: 70%; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 20vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 20vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+      height: 20vh;
+      padding: .5rem;
+      line-height: .5rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide h1 {
+        font-size: 1.2rem;
+        line-height: 2rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+        display: none; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+        font-size: .7rem;
+        padding: 5px;
+        width: 90%; }
+  body #chefsSpecials .specialOrder {
+    height: 5vh;
+    width: 35%; }
+  body .menus .wordsContainer ul li button {
+    width: 10rem; }
+  body .restuarantLocations .locationCard {
+    height: 35%;
+    width: 60%;
+    margin-left: 3rem; }
+    body .restuarantLocations .locationCard h1 {
+      font-size: 1.1rem; }
+    body .restuarantLocations .locationCard .dot {
+      font-size: 1.5rem; }
+  body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+    height: 15%; }
+  body .restuarantLocations .locationThree {
+    margin-top: 1rem;
+    align-self: flex-start; }
+  body footer {
+    grid-template-columns: 1fr 1fr 1fr; }
+    body footer .logo {
+      display: none; }
+    body footer .footerNav {
+      padding: 1rem; }
+    body footer .footerNav ul li {
+      list-style: none;
+      line-height: 2rem;
+      align-self: start; }
+    body footer .footerNavOne {
+      grid-column: 1 / span 1; }
+    body footer .footerNavTwo {
+      grid-column: 2 / span 1; }
+    body footer .footerNavThree {
+      grid-column: 3 / span 1; }
+      body footer .footerNavThree ul {
+        display: flex;
+        flex-direction: row; }
+        body footer .footerNavThree ul img {
+          width: 1rem;
+          height: 3rem;
+          margin-right: 2rem; } }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  html, body {
+    width: 135%;
+    overflow-x: hidden; }
+  body .topSection .topSectionOverlay header {
+    height: 10vh; }
+    body .topSection .topSectionOverlay header .logo {
+      margin-left: 3rem;
+      margin-right: 2rem; }
+    body .topSection .topSectionOverlay header nav {
+      justify-content: flex-start;
+      align-self: flex-end; }
+      body .topSection .topSectionOverlay header nav ul {
+        width: 105%; }
+        body .topSection .topSectionOverlay header nav ul li {
+          font-size: 1.4rem; }
+          body .topSection .topSectionOverlay header nav ul li .orderNowHeader, body .topSection .topSectionOverlay header nav ul li .leaveFeedback {
+            display: none; }
+  body .topSection .topSectionOverlay .landingPage .landingWords {
+    height: 50vh; }
+    body .topSection .topSectionOverlay .landingPage .landingWords p {
+      width: 60vh; }
+    body .topSection .topSectionOverlay .landingPage .landingWords button {
+      width: 60%;
+      height: 7vh; }
+    body .topSection .topSectionOverlay .landingPage .landingWords img {
+      width: 9rem;
+      height: 11rem; }
+  body #aboutUs img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem; }
+  body #aboutUs .aboutUsDetails {
+    line-height: .7rem; }
+    body #aboutUs .aboutUsDetails h1 {
+      font-size: 1.5rem; }
+    body #aboutUs .aboutUsDetails p {
+      width: 90%; }
+  body #chefsSpecials .chefsSpecialsDescription {
+    width: 70%; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .halfSide {
+      width: 65vw; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+      height: 35vh;
+      padding: .5rem;
+      line-height: .5rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide h1 {
+        font-size: 1.2rem;
+        line-height: 2rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+        display: none; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+        font-size: .7rem;
+        padding: 5px;
+        width: 90%; }
+  body #chefsSpecials .specialOrder {
+    height: 10vh;
+    width: 30%; }
+  body .restuarantLocations .locationTitle {
+    height: 20vh;
+    line-height: 2.5rem; }
+  body .restuarantLocations .locationCard {
+    height: 30%;
+    width: 50%;
+    line-height: 1rem;
+    margin-left: 5rem; }
+  body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+    height: 15%;
+    width: 50%; }
+  body .restuarantLocations .locationThree {
+    align-self: flex-start;
+    margin-top: 1rem; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  body .topSection .topSectionOverlay header {
+    height: 15vh; }
+    body .topSection .topSectionOverlay header .logo {
+      margin-left: 5rem;
+      margin-right: 2rem; }
+    body .topSection .topSectionOverlay header nav ul {
+      margin-right: 2rem; }
+      body .topSection .topSectionOverlay header nav ul li .orderNowHeader, body .topSection .topSectionOverlay header nav ul li .leaveFeedback {
+        display: none; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 35vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+      height: 35vh;
+      padding: .5rem;
+      line-height: .5rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide h1 {
+        font-size: 1.2rem;
+        line-height: 2rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+        display: none; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+        font-size: .7rem;
+        padding: 5px;
+        width: 90%; }
+  body #chefsSpecials .specialOrder {
+    height: 6vh;
+    width: 30%; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (orientation: landscape) {
+  body .topSection .topSectionOverlay header {
+    height: 20vh; }
+    body .topSection .topSectionOverlay header .logo {
+      margin-left: 5rem; }
+    body .topSection .topSectionOverlay header nav ul {
+      margin-right: 3rem; }
+      body .topSection .topSectionOverlay header nav ul li .orderNowHeader, body .topSection .topSectionOverlay header nav ul li .leaveFeedback {
+        display: none; }
+  body .topSection .topSectionOverlay .landingPage .landingWords {
+    height: 70vh; }
+    body .topSection .topSectionOverlay .landingPage .landingWords h1 {
+      font-size: 3rem;
+      line-height: 3rem; }
+    body .topSection .topSectionOverlay .landingPage .landingWords p {
+      width: 80vh; }
+    body .topSection .topSectionOverlay .landingPage .landingWords button {
+      width: 90%;
+      height: 10vh; }
+    body .topSection .topSectionOverlay .landingPage .landingWords img {
+      width: 8rem;
+      height: 11rem; }
+  body #aboutUs img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem; }
+  body #aboutUs .aboutUsDetails {
+    line-height: .7rem; }
+    body #aboutUs .aboutUsDetails h1 {
+      font-size: 1.5rem; }
+    body #aboutUs .aboutUsDetails p {
+      width: 90%; }
+  body #chefsSpecials .chefsSpecialMeals .mealCards {
+    height: 60vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .picSide img {
+      height: 60vh; }
+    body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide {
+      height: 60vh;
+      padding: .5rem;
+      line-height: .5rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide h1 {
+        font-size: 1.2rem;
+        line-height: 2rem; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide p {
+        display: none; }
+      body #chefsSpecials .chefsSpecialMeals .mealCards .descriptionSide button {
+        font-size: .7rem;
+        padding: 5px;
+        width: 90%; }
+  body #chefsSpecials .specialOrder {
+    height: 10vh;
+    width: 30%; }
+  body .menus {
+    height: 100vh; }
+    body .menus .wordsContainer {
+      width: 95%;
+      line-height: 1.8rem; }
+      body .menus .wordsContainer ul li button {
+        width: 15rem;
+        height: 10vh; }
+  body .restuarantLocations {
+    height: 150vh; }
+    body .restuarantLocations .locationTitle {
+      height: 40vh;
+      line-height: 3rem; }
+    body .restuarantLocations .locationCard {
+      height: 40%;
+      width: 40%;
+      line-height: 1rem;
+      margin-left: 5rem; }
+    body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+      height: 18%; }
+    body .restuarantLocations .locationThree {
+      align-self: flex-end;
+      margin-right: 1rem; }
+  body footer {
+    height: 55vh; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
+  html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; }
+  body .topSection {
+    background: #d0e5d4 url("../imgs/SushibyDaveonDribbble.jpg") 100%/50% no-repeat; }
+    body .topSection .topSectionOverlay header {
+      height: 15vh; }
+      body .topSection .topSectionOverlay header .logo {
+        margin-top: -1rem; }
+        body .topSection .topSectionOverlay header .logo img {
+          width: 8rem;
+          height: 8rem; }
+      body .topSection .topSectionOverlay header nav ul li {
+        margin-right: 1rem;
+        word-spacing: .2rem; }
+    body .topSection .topSectionOverlay .landingPage .landingWords {
+      line-height: 1rem; }
+      body .topSection .topSectionOverlay .landingPage .landingWords h1 {
+        font-size: 3rem; }
+      body .topSection .topSectionOverlay .landingPage .landingWords p {
+        width: 20rem; }
+      body .topSection .topSectionOverlay .landingPage .landingWords img {
+        display: none; }
+  body #aboutUs {
+    height: 100vh; }
+    body #aboutUs img {
+      width: 4rem;
+      height: 4rem; }
+    body #aboutUs .aboutUsDetails h1 {
+      font-size: 1.5rem; }
+    body #aboutUs .aboutUsDetails p {
+      line-height: 1.5rem; }
+  body .menus {
+    height: 110vh; }
+    body .menus .wordsContainer img {
+      width: 5rem;
+      height: 5rem; }
+    body .menus .wordsContainer h1 {
+      font-size: 1.5rem; }
+  body .restuarantLocations {
+    height: 100vh; }
+    body .restuarantLocations .locationTitle {
+      height: 25vh; }
+      body .restuarantLocations .locationTitle h1 {
+        font-size: 1.8rem; }
+      body .restuarantLocations .locationTitle h2 {
+        font-size: 1rem; }
+    body .restuarantLocations .locationCard {
+      height: 100%;
+      margin-left: 1rem; }
+      body .restuarantLocations .locationCard h1 {
+        font-size: 1rem; }
+      body .restuarantLocations .locationCard p {
+        font-size: .8rem; }
+    body .restuarantLocations .locationTwo, body .restuarantLocations .locationThree {
+      margin-left: 10rem; }
+    body .restuarantLocations .locationThree {
+      align-self: center;
+      margin-top: -9rem; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  html, body {
+    width: 140%;
+    margin: 0px;
+    padding: 0px; }
+  body .menus {
+    height: 100vh; }
+  body footer {
+    height: 40vh; }
+    body footer .logo img {
+      margin-left: 2rem; } }
